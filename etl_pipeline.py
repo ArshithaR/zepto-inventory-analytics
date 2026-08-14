@@ -3,7 +3,7 @@ import psycopg2
 from sqlalchemy import create_engine
 
 # 1. Connect to your local PostgreSQL database (replace 'your_password' with your actual postgres password)
-engine = create_engine('postgresql+psycopg2://postgres:ARSHITHA@localhost:5432/ZEPTO_PROJECT')
+engine = create_engine('postgresql+psycopg2://postgres:your_password@localhost:5432/ZEPTO_PROJECT')
 
 # 2. EXTRACT: Read data from PostgreSQL table into a Pandas DataFrame
 df = pd.read_sql('SELECT * FROM zepto_inventory', con=engine)

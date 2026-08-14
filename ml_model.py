@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sklearn.linear_model import LinearRegression
 
 # 1. Connect to PostgreSQL and load the cleaned data
-engine = create_engine('postgresql+psycopg2://postgres:ARSHITHA@localhost:5432/ZEPTO_PROJECT')
+engine = create_engine('postgresql+psycopg2://postgres:your_password@localhost:5432/ZEPTO_PROJECT')
 df = pd.read_sql('SELECT * FROM zepto_inventory_cleaned', con=engine)
 
 print("--- 1. STATISTICAL SUMMARY ---")
